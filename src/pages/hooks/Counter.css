@@ -1,0 +1,20 @@
+.counter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.counter button {
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
