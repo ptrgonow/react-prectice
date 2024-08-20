@@ -16,6 +16,9 @@ function App() {
                         <li>
                             <Link to="cals"> Calculator </Link>
                         </li>
+                        <li>
+                            <Link to="validation">validation</Link>
+                        </li>
                     </ul>
                 </nav>
             </header>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Cals.css";
 
 
-export default function Cals() {
+function Cals() {
 
     const [result, setResult] = useState(0);
     const [prevNumber, setPrevNumber] = useState(null);
@@ -25,7 +25,6 @@ export default function Cals() {
 
     const pressOperator = (e) => {
         if (currentNumber === "" && prevNumber === null) return;
-
         if (prevNumber !== null && currentNumber !== "") {
             calculate();
         } else if (currentNumber !== "") {
@@ -68,7 +67,6 @@ export default function Cals() {
         setPrevNumber(calcResult);
         setCurrentNumber("");
     };
-
 
     return (
         <>
@@ -118,3 +116,5 @@ export default function Cals() {
     )
 
 }
+
+export default Cals;

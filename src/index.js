@@ -10,6 +10,7 @@ import Nested from "./pages/Nested";
 import Hooks from "./pages/hooks/Hooks";
 import Counter from "./pages/hooks/Counter";
 import Cals from "./pages/hooks/Cals";
+import Validation from "./pages/hooks/Validation";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -28,9 +29,9 @@ const router = createBrowserRouter(
             <Route path="hooks" element={<Hooks/>}>
                 <Route index element={<Counter />} />
                 <Route path="counter" element={<Counter />} />
-                {/*cals 가 이 위치에 들어가면 왜 404 뜨는지 질문*/}
             </Route>
             <Route path="cals" element={<Cals />} />
+            <Route path="validation" element={<Validation />} />
         </Route>
     )
 );
